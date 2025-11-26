@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav style={styles.nav}>
+    <nav style={styles.nav} className="nav-responsive">
       <Link to="/" style={{ textDecoration: 'none' }}>
         <div style={styles.logo}>🏄‍♂️ VIDA SURF</div>
       </Link>
 
-      <ul style={styles.menu}>
+      <ul style={styles.menu} className="menu-responsive">
         {/* Enlaces directos a las páginas nuevas */}
         <li><Link to="/" style={styles.link}>INICIO</Link></li>
         <li><Link to="/playas" style={styles.link}>PLAYAS</Link></li>
@@ -38,5 +38,29 @@ const styles = {
     textTransform: 'uppercase', letterSpacing: '1px', transition: 'opacity 0.3s', opacity: 0.9
   }
 };
+//  NAVBAR RESPONSIVE 
+const responsiveNavCss = `
+  @media (max-width: 768px) {
+    /* En celular, cambiamos la dirección de fila a columna */
+    .nav-responsive {
+      flex-direction: column !important;
+      padding: 15px !important;
+      background: rgba(0,29,61,0.95) !important; /* Fondo más oscuro para que se lea bien */
+    }
+    .menu-responsive {
+      margin-top: 15px !important; /* Espacio entre logo y menú */
+      gap: 15px !important; /* Menos espacio entre enlaces */
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Hacemos los enlaces un pelín más pequeños */
+    .menu-responsive a, .menu-responsive button {
+        font-size: 0.8rem !important;
+    }
+  }
+`;
+const navStyleSheet = document.createElement("style");
+navStyleSheet.innerText = responsiveNavCss;
+document.head.appendChild(navStyleSheet);
 
 export default Navbar;

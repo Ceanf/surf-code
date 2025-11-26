@@ -8,8 +8,8 @@ const Home = () => {
       {/* ---  HERO SECTION  --- */}
       <div id="inicio" style={styles.heroSection}>
         <div style={styles.heroOverlay}>
-          <h1 style={styles.heroTitle}>SURF LIFE</h1>
-          <p style={styles.heroSubtitle}>
+          <h1 style={styles.heroTitle} className="responsive-title">SURF LIFE</h1>
+          <p style={styles.heroSubtitle} className="responsive-subtitle">
             Code, Silence & Waves. Tu conexión con el océano.
           </p>
           <Link to="/playas">
@@ -376,6 +376,24 @@ const css = `
 `;
 const styleSheet = document.createElement("style");
 styleSheet.innerText = css;
+document.head.appendChild(styleSheet);
+
+// CSS PARA RESPONSIVE 
+const responsiveCss = `
+  @media (max-width: 768px) {
+    /* Cuando la pantalla sea de tablet o celular: */
+    .responsive-title {
+      font-size: 3rem !important; /* Reducimos de 5rem a 3rem */
+      letter-spacing: 2px !important;
+    }
+    .responsive-subtitle {
+      font-size: 1.1rem !important;
+      padding: 0 20px; /* Un poco de margen a los lados */
+    }
+  }
+`;
+const styleSheet = document.createElement("style");
+styleSheet.innerText = responsiveCss;
 document.head.appendChild(styleSheet);
 
 export default Home;
