@@ -1,0 +1,13 @@
+/* src/App.css */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Opcional, si quieres centrar todo el texto */
+}
+
+/* Esto asegura que las imágenes de las tarjetas no se salgan */
+img {
+  max-width: 100%;
+  display: block;
+}
