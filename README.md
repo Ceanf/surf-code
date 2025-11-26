@@ -26,7 +26,7 @@ Características
 
 📸 **Galería Interactiva:** Álbum de fotos personal con carga local.
 
-📱 **Responsive:** Se ve increíble en celular y PC.
+
 
 
 **Estado:** Aún está en desarrollo, falta mejorar pero ahí va un avance.
