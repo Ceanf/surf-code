@@ -2,21 +2,33 @@
 
 🏄‍♂️ Vida Surf - Code, Silence & Waves
 
-Una aplicación web moderna para los amantes del surf en Perú. Explora los mejores spots, conoce el equipo ideal y algunas fotos surfeando playita :)
+Este proyecto nace de mi pasión personal por el surf. Mi objetivo principal fue mejorar mis habilidades técnicas con **React** construyendo algo real, y al mismo tiempo, capturar la esencia de los mejores spots de Perú y mi viaje personal en las olas.
+
+Es una aplicación web moderna para los amantes del surf donde podrás explorar los mejores spots, conocer el equipo ideal y ver mi galería surfeando en la playita :)
 
 🔗 Demo en vivo: [https://surf-code.vercel.app/](https://surf-code.vercel.app/)
 
 Tecnologías usadas
+
 1.-React + Vite: Para una experiencia ultra rápida.
+
 2.-React Router: Navegación fluida sin recargas (SPA).
+
 3.-CSS Puro: Estilos modernos, Flexbox y Grid.
+
 4.-Vercel: Despliegue continuo (CI/CD).
 
 Características
+
 🌊 **Catálogo de Playas:** Información detallada de spots peruanos.
+
 🏄 **Guía de Tablas:** Recomendaciones de equipo.
+
 📸 **Galería Interactiva:** Álbum de fotos personal con carga local.
+
 📱 **Responsive:** Se ve increíble en celular y PC.
 
-**Estado:** Aún está en desarrollo, falta mejorar pero ahí tengo un avance.
+
+**Estado:** Aún está en desarrollo, falta mejorar pero ahí va un avance.
+
 by CEAN CHAVEZ:)
